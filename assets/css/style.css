@@ -8,11 +8,18 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: #fff;
+  
 }
 
 a {
   color: rgb(31, 115, 130);
   text-decoration: underline;
+}
+
+p {
+  font-size: 16px;
+  color: rgb(7, 6, 6);
 }
 
 .float-left {
@@ -22,12 +29,12 @@ a {
 
 .float-right {
   float: right;
-  margin-left: 25px;
+  margin-left: 35px;
 }
 
 header h1 {
   display: inline-block;
-  font-size: medium;
+  font-size: 48px;
 }
 
 header h1 .Portfolio {
@@ -39,7 +46,7 @@ header nav {
   margin-left: 20px;
   list-style-type: none;
   text-align: center;
-  float: left;
+  float: right;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
 
@@ -69,7 +76,28 @@ h1 {
   height: 400px;
   width: fit-content;
   margin-bottom: 25px;
-  background-image: url(./images/02-hero-bg.jpg);
   background-size: cover;
   background-position: center;
+}
+.hero-image {
+  background-image: url("./images/02-hero-bg.jpg");
+  height: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.button {
+  background-color: white;
+  color: rgb(172, 21, 21);
+  border: 2px solid #4CAF50;
 }
