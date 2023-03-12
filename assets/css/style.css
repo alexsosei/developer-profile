@@ -19,7 +19,8 @@ a {
 
 p {
   font-size: 16px;
-  color: rgb(7, 6, 6);
+  color: rgb(39, 16, 216);
+  font-display: bold;
 }
 
 .float-left {
@@ -72,32 +73,8 @@ h1 {
   color: rgb(48, 137, 192);
 }
 
-.hero {
-  height: 400px;
-  width: fit-content;
-  margin-bottom: 25px;
-  background-size: cover;
-  background-position: center;
-}
-.hero-image {
-  background-image: url("./images/02-hero-bg.jpg");
-  height: fit-content;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-.button {
-  background-color: white;
-  color: rgb(172, 21, 21);
-  border: 2px solid #4CAF50;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 30px;
 }
