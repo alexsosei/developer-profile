@@ -201,15 +201,17 @@ button:hover, a:hover {
 button1:hover, a:hover {
   opacity: 0.7;
 }
-@media screen and (max-width: 960px) {
-  main img {
-    grid-column: span 8;
-  }
-  main .aboutme {
-    grid-column: span 8;
-    text-align: center;
-  }
-  main .card {
-    grid-column: span 8;
+@media (min-width: 800px) {
+  p {
+    font-size: 1.25em;
   }
 }
+@media (min-width: 800px) {
+  p {
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+}
+
+
+
