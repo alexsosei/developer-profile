@@ -14,7 +14,7 @@ The webpage was built with all accessibility standards in mind. The following ar
 ## Installation
 The app is deployed using link https://alexsosei.github.io/developer-profile/ 
 ## Usage
-The web app is registered and displayed in screenshot below ![login](https://github.com/alexsosei/html-css-git-challenge/blob/main/Assets/images/01-html-css-git-challenge-demo.png) 
+The web app is registered and displayed in screenshot below ![login](https://alexsosei.
 ## License
 The license used is MIT license
 ## Features
