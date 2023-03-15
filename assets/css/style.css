@@ -9,6 +9,7 @@ body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
   background-color: #fff;
+  display: flexbox;
   
 }
 
@@ -73,13 +74,36 @@ h1 {
   margin: 0px 0px;
   color: rgb(48, 137, 192);
   grid-column: span 6;
+ 
 }
+
+.item1 { grid-area: header; }
+.item2 { grid-area: aboutme; }
+.item3 { grid-area: card; }
+.item4 { grid-area: contacts; }
+.item5 { grid-area: resume; }
+.item6 { grid-area: footer; }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12,1fr);
-  gap: 30px;
+  grid-template-areas: 
+  'header header header header header header'
+  'aboutme aboutme aboutme aboutme aboutme aboutme'
+  'card card card card card card'
+  'contacts contacts contacts resume resume resume'
+  'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #fff;
+  padding: 10px;
 }
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
 header {
   padding: 20px 40px;
   background: #fff;
@@ -91,49 +115,89 @@ main {
   padding: 20px;
 }
 main img {
-  grid-column: span 6;
+  grid-column: span 2;
   width: 100%;
   border-radius: 6px;
 }
 main .aboutme {
-  grid-column: 8 / span 5;
+  grid-column: 4 / span 2;
   text-align: justify;
 
 } 
 main > h2 {
-  grid-column: span 3;
+  grid-column: span 6;
   text-align: left;
-  font-size: 1.5em;
+  font-size: 30px;
+  color: #1771df;
   padding-top: 20px;
 }
 main .card {
-  grid-column: 1 / span 11;
+  grid-column: span 3 / 1fr;
   background: #fff;
   padding: 10px 30px;
-  border-radius: 4px;
-  box-shadow: 1px 1px 1px rgba(0,0,0);
+  
 }
-main > h4 {
+
+main > h3 {
   grid-column: span 6;
   text-align: left;
-  font-size: 1.5em;
+  font-size: 30px;
+  color: #1771df;
   padding-top: 20px;
-}
+  grid-auto-rows: 200px;
+
+} 
 main .contacts {
-  grid-column: 3/ span 8;
-  background: #fff;
+  grid-column: span 6;
+  background: rgb(71, 151, 115);
   padding: 10px 10px;
+  grid-auto-rows: 200px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
 }
 main > h5 {
   grid-column: span 6;
   text-align: left;
-  font-size: 1.5em;
+  font-size: 30px;
+  color: #1771df;
   padding-top: 20px;
 }
 main .resume {
-  grid-column: 3/ span 8;
+  grid-column: span 5;
   background: #fff;
   padding: 10px 10px;
+  grid-auto-rows: 200px;
+}
+
+.button {
+  background-color: #1771df; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button1 {
+  background-color: #868b91; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+button:hover, a:hover {
+  opacity: 0.7;
+}
+button1:hover, a:hover {
+  opacity: 0.7;
 }
 @media screen and (max-width: 960px) {
   main img {
