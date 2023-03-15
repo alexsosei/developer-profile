@@ -50,6 +50,7 @@ header nav {
   float: right;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 20px;
+  grid-column: 7 / span 6;
 
 }
 
@@ -71,10 +72,78 @@ h1 {
   font-size: 35px;
   margin: 0px 0px;
   color: rgb(48, 137, 192);
+  grid-column: span 6;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(12,1fr);
   gap: 30px;
+}
+header {
+  padding: 20px 40px;
+  background: #fff;
+  align-items: center;
+}
+main {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+main img {
+  grid-column: span 6;
+  width: 100%;
+  border-radius: 6px;
+}
+main .aboutme {
+  grid-column: 8 / span 5;
+  text-align: justify;
+
+} 
+main > h2 {
+  grid-column: span 3;
+  text-align: left;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+main .card {
+  grid-column: 1 / span 11;
+  background: #fff;
+  padding: 10px 30px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px rgba(0,0,0);
+}
+main > h4 {
+  grid-column: span 6;
+  text-align: left;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+main .contacts {
+  grid-column: 3/ span 8;
+  background: #fff;
+  padding: 10px 10px;
+}
+main > h5 {
+  grid-column: span 6;
+  text-align: left;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+main .resume {
+  grid-column: 3/ span 8;
+  background: #fff;
+  padding: 10px 10px;
+}
+@media screen and (max-width: 960px) {
+  main img {
+    grid-column: 2 / span 10;
+  }
+  main .welcome {
+    grid-column: 3 / span 8;
+    text-align: center;
+  }
+  main .card {
+    grid-column: 3 / span 8;
+  }
 }
