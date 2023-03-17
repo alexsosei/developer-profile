@@ -14,7 +14,7 @@ The webpage was built with all accessibility standards in mind. The following ar
 ## Installation
 The app is deployed using link https://alexsosei.github.io/developer-profile/ 
 ## Usage
-The web app is registered and displayed in screenshot below [![Watch the video](https://github.com/alexsosei/developer-profile/blob/main/assets/images/screenshot.mov)]
+The web app is registered and displayed in screenshot below ![login]()
 ## License
 The license used is MIT license
 ## Features
